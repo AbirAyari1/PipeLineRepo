@@ -5,7 +5,8 @@ pipeline {
         stage('Récupérer le code source') {
             steps {
                 // Récupérer le code source depuis le référentiel Git
-                git 'https://github.com/AbirAyari1/PipeLineRepo.git'
+                git branch : 'main',
+                url : 'https://github.com/AbirAyari1/PipeLineRepo.git'
             }
         }
 
